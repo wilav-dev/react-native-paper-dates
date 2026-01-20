@@ -5,9 +5,9 @@ import { getTranslation } from '../translations/utils'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 
 export interface DatePickerModalHeaderProps {
+  buttonsColor?: string
   saveLabel?: string
   saveLabelDisabled?: boolean
-  saveLabelColor?: string
   saveLabelStyle?: StyleProp<any>
   uppercase?: boolean
   onDismiss: () => void
@@ -46,7 +46,7 @@ export default function DatePickerModalHeader(
             testID="react-native-paper-dates-close"
           />
           <Button
-            textColor={props.saveLabelColor || (theme.isV3 ? theme.colors.primary : color)}
+            textColor={props.buttonsColor || (theme.isV3 ? theme.colors.primary : color)}
             onPress={props.onSave}
             disabled={props.saveLabelDisabled ?? false}
             uppercase={props.uppercase ?? true}
