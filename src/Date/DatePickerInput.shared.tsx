@@ -1,6 +1,7 @@
 import { ComponentProps, CSSProperties } from 'react'
 import type { ValidRangeType } from './Calendar'
 import type { TextInput } from 'react-native-paper'
+import { StyleProp } from 'react-native'
 
 export type DatePickerInputProps = {
   inputMode: 'start' | 'end'
@@ -20,6 +21,7 @@ export type DatePickerInputProps = {
   iconColor?: string
   saveLabel?: string
   saveLabelDisabled?: boolean
+  DatePickerInputProps?: StyleProp<any>
   uppercase?: boolean
   startYear?: number
   endYear?: number
