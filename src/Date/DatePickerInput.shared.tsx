@@ -21,7 +21,7 @@ export type DatePickerInputProps = {
   iconColor?: string
   saveLabel?: string
   saveLabelDisabled?: boolean
-  DatePickerInputProps?: StyleProp<any>
+  saveLabelStyle?: StyleProp<any>
   uppercase?: boolean
   startYear?: number
   endYear?: number
