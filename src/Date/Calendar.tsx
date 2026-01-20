@@ -229,6 +229,7 @@ function Calendar(
           onPressYear={onPressYear}
           startYear={startYear || defaultStartYear}
           endYear={endYear || defaultEndYear}
+          primaryColor={buttonsColor || theme.colors.primary}
         />
       ) : null}
     </View>
