@@ -20,7 +20,7 @@ export default function YearPicker({
   onPressYear: (year: number) => any
   startYear: number
   endYear: number
-  primaryColor: string
+  primaryColor: string | undefined
 }) {
   const theme = useTheme()
 
@@ -82,7 +82,7 @@ function YearPure({
   year: number
   selected: boolean
   onPressYear: (newYear: number) => any
-  primaryColor: string
+  primaryColor: string | undefined
 }) {
   const theme = useTheme()
 
@@ -101,7 +101,7 @@ function YearPure({
         <View
           style={[
             styles.yearInner,
-            selected ? { backgroundColor: primaryColor } : null,
+            selected ? { backgroundColor: primaryColor || theme.colors.primary } : null,
           ]}
         >
           <Text
