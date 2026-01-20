@@ -21,8 +21,8 @@ function DatePickerInputWithoutModal(
     modal,
     inputButton,
     allowEditing,
+    buttonsColor,
     saveLabel,
-    saveLabelColor,
     saveLabelDisabled,
     saveLabelStyle,
     uppercase,
@@ -43,7 +43,7 @@ function DatePickerInputWithoutModal(
       allowEditing: DatePickerInputProps['allowEditing']
       saveLabel: DatePickerInputProps['saveLabel']
       saveLabelDisabled: DatePickerInputProps['saveLabelDisabled']
-      saveLabelColor: DatePickerInputProps['saveLabelColor']
+      buttonsColor: DatePickerInputProps['buttonsColor']
       saveLabelStyle: DatePickerInputProps['saveLabelStyle'],
       uppercase: DatePickerInputProps['uppercase']
       startYear: DatePickerInputProps['startYear']
@@ -121,9 +121,9 @@ function DatePickerInputWithoutModal(
         inputMode,
         validRange,
         allowEditing,
+        buttonsColor,
         saveLabel,
         saveLabelDisabled,
-        saveLabelColor,
         saveLabelStyle,
         uppercase,
         startYear,
