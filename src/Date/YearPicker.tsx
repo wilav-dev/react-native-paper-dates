@@ -19,7 +19,7 @@ export default function YearPicker({
   selectingYear: boolean
   onPressYear: (year: number) => any
   startYear: number
-  endYear: number,
+  endYear: number
   primaryColor: string
 }) {
   const theme = useTheme()
