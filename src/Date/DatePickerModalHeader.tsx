@@ -49,7 +49,7 @@ export default function DatePickerModalHeader(
             onPress={props.onSave}
             disabled={props.saveLabelDisabled ?? false}
             uppercase={props.uppercase ?? true}
-            contentStyle={StyleSheet.flatten([styles.buttonStyle, saveLabelStyle])}
+            contentStyle={StyleSheet.flatten([styles.buttonStyle, props.saveLabelStyle])}
             mode="text"
             labelStyle={styles.buttonLabel}
             testID="react-native-paper-dates-save"
