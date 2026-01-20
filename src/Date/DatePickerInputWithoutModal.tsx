@@ -22,6 +22,7 @@ function DatePickerInputWithoutModal(
     inputButton,
     saveLabel,
     saveLabelDisabled,
+    savelabelStyle,
     uppercase,
     startYear,
     endYear,
@@ -39,6 +40,7 @@ function DatePickerInputWithoutModal(
       validRange: DatePickerInputProps['validRange']
       saveLabel: DatePickerInputProps['saveLabel']
       saveLabelDisabled: DatePickerInputProps['saveLabelDisabled']
+      savelabelStyle: DatePickerInputProps['saveLabelStyle'],
       uppercase: DatePickerInputProps['uppercase']
       startYear: DatePickerInputProps['startYear']
       endYear: DatePickerInputProps['endYear']
@@ -116,6 +118,7 @@ function DatePickerInputWithoutModal(
         validRange,
         saveLabel,
         saveLabelDisabled,
+        saveLabelStyle,
         uppercase,
         startYear,
         endYear,
