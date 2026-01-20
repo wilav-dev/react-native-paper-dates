@@ -18,6 +18,7 @@ import DatePickerModalHeaderBackground from './DatePickerModalHeaderBackground'
 import { useTheme } from 'react-native-paper'
 import DatePickerModalStatusBar from './DatePickerModalStatusBar'
 import { memo, useCallback, useEffect, useState } from 'react'
+import { StyleProp } from 'react-native'
 
 export type LocalState = {
   startDate: CalendarDate
@@ -32,6 +33,7 @@ interface DatePickerModalContentBaseProps {
   onDismiss: () => any
 
   saveLabelDisabled?: boolean
+  saveLabelStyle?: StyleProp<any>;
   uppercase?: boolean
   inputEnabled?: boolean
 
@@ -160,6 +162,7 @@ export function DatePickerModalContent(
           onDismiss={onDismiss}
           saveLabel={props.saveLabel}
           saveLabelDisabled={props.saveLabelDisabled ?? false}
+          saveLabelStyle={props.saveLabelStyle}
           uppercase={props.uppercase ?? defaultUppercase}
           closeIcon={props.closeIcon}
         />
