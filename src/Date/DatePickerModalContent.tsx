@@ -32,8 +32,10 @@ interface DatePickerModalContentBaseProps {
   locale: string
   onDismiss: () => any
 
+  allowEditing?: boolean
+
+  buttonsColor?: string
   saveLabelDisabled?: boolean
-  saveLabelColor?: string
   saveLabelStyle?: StyleProp<any>;
   uppercase?: boolean
   inputEnabled?: boolean
@@ -161,9 +163,9 @@ export function DatePickerModalContent(
           locale={locale}
           onSave={onInnerConfirm}
           onDismiss={onDismiss}
+          buttonsColor={props.buttonsColor}
           saveLabel={props.saveLabel}
           saveLabelDisabled={props.saveLabelDisabled ?? false}
-          saveLabelColor={props.saveLabelColor}
           saveLabelStyle={props.saveLabelStyle}
           uppercase={props.uppercase ?? defaultUppercase}
           closeIcon={props.closeIcon}
