@@ -20,8 +20,8 @@ export type DatePickerInputProps = {
   iconStyle?: CSSProperties
   iconColor?: string
   allowEditing?: boolean
+  buttonsColor?: string
   saveLabel?: string
-  saveLabelColor?: string
   saveLabelDisabled?: boolean
   saveLabelStyle?: StyleProp<any>
   uppercase?: boolean
