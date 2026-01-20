@@ -43,14 +43,13 @@ function Day(props: {
     disabled,
     textColorOnPrimary,
     theme,
-    buttonsColor,
   } = props
   const borderColorFallback = theme.dark ? '#fff' : '#000'
   const selectedOrInRangeDarkMode = selected || (inRange && theme.dark)
   const v2BorderColor = selectedOrInRangeDarkMode
     ? textColorOnPrimary
     : borderColorFallback
-  const borderColor = buttonsColor || (theme.isV3 ? theme.colors.primary : v2BorderColor)
+  const borderColor = theme.isV3 ? primaryColor : v2BorderColor
 
   const onPress = useCallback(() => {
     onPressDate(new Date(year, month, day))
@@ -73,7 +72,7 @@ function Day(props: {
 
     // Theme V3 specific logic for final text color
     if (isToday) {
-      finalTextColor = selected ? baseTextColor : theme.colors.primary
+      finalTextColor = selected ? baseTextColor : primaryColor
     } else {
       finalTextColor = baseTextColor
     }
