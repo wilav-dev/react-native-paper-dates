@@ -19,9 +19,10 @@ export type DatePickerInputProps = {
   iconSize?: number
   iconStyle?: CSSProperties
   iconColor?: string
+  allowEditing?: boolean
   saveLabel?: string
-  saveLabelDisabled?: boolean
   saveLabelColor?: string
+  saveLabelDisabled?: boolean
   saveLabelStyle?: StyleProp<any>
   uppercase?: boolean
   startYear?: number
