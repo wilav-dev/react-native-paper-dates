@@ -98,6 +98,7 @@ export function DatePickerModalContent(
     endYear,
     statusBarOnTopOfBackdrop,
     startWeekOnMonday,
+    buttonsColor,
   } = props
   const theme = useTheme()
   const anyProps = props as any
@@ -205,6 +206,7 @@ export function DatePickerModalContent(
             startYear={startYear}
             endYear={endYear}
             startWeekOnMonday={startWeekOnMonday}
+            buttonsColor={buttonsColor}
           />
         }
         calendarEdit={
