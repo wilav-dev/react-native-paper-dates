@@ -219,6 +219,7 @@ function Calendar(
             scrollMode={scrollMode}
             disableWeekDays={disableWeekDays}
             startWeekOnMonday={startWeekOnMonday || false}
+            buttonsColor={buttonsColor}
           />
         )}
       />
