@@ -58,9 +58,10 @@ function DatePickerInput(
         locale,
         inputMode,
         validRange,
+        allowEditing,
         saveLabel,
-        saveLabelDisabled,
         saveLabelColor,
+        saveLabelDisabled,
         saveLabelStyle,
         uppercase,
         startYear,
@@ -80,9 +81,10 @@ function DatePickerInput(
             locale={locale}
             dateMode={inputMode}
             validRange={validRange}
+            allowEditing={allowEditing}
             saveLabel={saveLabel}
-            saveLabelDisabled={saveLabelDisabled ?? false}
             saveLabelColor={saveLabelColor}
+            saveLabelDisabled={saveLabelDisabled ?? false}
             saveLabelStyle={saveLabelStyle}
             uppercase={uppercase}
             startYear={startYear ?? defaultStartYear}
