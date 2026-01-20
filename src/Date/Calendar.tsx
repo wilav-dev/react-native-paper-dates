@@ -41,6 +41,7 @@ export type BaseCalendarProps = {
   startDate?: CalendarDate
   endDate?: CalendarDate
   dateMode?: 'start' | 'end'
+  buttonsColor?: string
 }
 
 export type CalendarDate = Date | undefined
@@ -97,6 +98,7 @@ function Calendar(
     validRange,
     dateMode,
     startWeekOnMonday,
+    buttonsColor,
   } = props
   const scrollMode =
     mode === 'range' || mode === 'multiple' ? 'vertical' : 'horizontal'
@@ -163,6 +165,10 @@ function Calendar(
   )
 
   const selectColor = useMemo<string>(() => {
+    if (buttonsColor) {
+      return buttonsColor
+    }
+    
     if (theme.isV3) {
       return theme.colors.primaryContainer
     }
@@ -196,7 +202,7 @@ function Calendar(
             selectingYear={selectingYear}
             onPressDate={onPressDate}
             scrollMode={scrollMode}
-            primaryColor={theme.colors.primary}
+            primaryColor={props.buttonsColor || theme.colors.primary}
             selectColor={selectColor}
             roundness={theme.roundness}
             disableWeekDays={disableWeekDays}
