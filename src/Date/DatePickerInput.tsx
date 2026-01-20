@@ -60,6 +60,7 @@ function DatePickerInput(
         validRange,
         saveLabel,
         saveLabelDisabled,
+        saveLabelStyle,
         uppercase,
         startYear,
         endYear,
@@ -80,6 +81,7 @@ function DatePickerInput(
             validRange={validRange}
             saveLabel={saveLabel}
             saveLabelDisabled={saveLabelDisabled ?? false}
+            saveLabelStyle={saveLabelStyle}
             uppercase={uppercase}
             startYear={startYear ?? defaultStartYear}
             endYear={endYear ?? defaultEndYear}
