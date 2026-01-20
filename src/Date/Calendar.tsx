@@ -202,7 +202,7 @@ function Calendar(
             selectingYear={selectingYear}
             onPressDate={onPressDate}
             scrollMode={scrollMode}
-            primaryColor={props.buttonsColor || theme.colors.primary}
+            primaryColor={buttonsColor || theme.colors.primary}
             selectColor={selectColor}
             roundness={theme.roundness}
             disableWeekDays={disableWeekDays}
