@@ -1,4 +1,4 @@
-import { Animated, StyleSheet } from 'react-native'
+import { Animated, StyleProp, StyleSheet } from 'react-native'
 import { Appbar, Button, useTheme } from 'react-native-paper'
 import { useHeaderTextColor } from '../shared/utils'
 import { getTranslation } from '../translations/utils'
@@ -7,6 +7,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context'
 export interface DatePickerModalHeaderProps {
   saveLabel?: string
   saveLabelDisabled?: boolean
+  saveLabelStyle?: StyleProp<any>
   uppercase?: boolean
   onDismiss: () => void
   onSave: () => void
@@ -48,7 +49,7 @@ export default function DatePickerModalHeader(
             onPress={props.onSave}
             disabled={props.saveLabelDisabled ?? false}
             uppercase={props.uppercase ?? true}
-            contentStyle={styles.buttonStyle}
+            contentStyle={StyleSheet.flatten([styles.buttonStyle, saveLabelStyle])}
             mode="text"
             labelStyle={styles.buttonLabel}
             testID="react-native-paper-dates-save"
