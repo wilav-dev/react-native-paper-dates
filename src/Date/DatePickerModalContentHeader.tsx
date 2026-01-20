@@ -1,4 +1,4 @@
-import { StyleSheet, View } from 'react-native'
+import { StyleProp, StyleSheet, View } from 'react-native'
 import { IconButton, MD2Theme, Text, useTheme } from 'react-native-paper'
 import type { ModeType } from './Calendar'
 import type { LocalState } from './DatePickerModalContent'
@@ -15,6 +15,7 @@ export interface HeaderPickProps {
   withDateFormatInLabel?: boolean
   placeholder?: string
   saveLabel?: string
+  saveLabelStyle?: StyleProp<any>
   uppercase?: boolean
   headerSeparator?: string
   startLabel?: string
