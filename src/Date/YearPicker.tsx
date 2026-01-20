@@ -20,7 +20,7 @@ export default function YearPicker({
   onPressYear: (year: number) => any
   startYear: number
   endYear: number,
-  primaryColor: string | undefined
+  primaryColor: string
 }) {
   const theme = useTheme()
 
@@ -63,6 +63,7 @@ export default function YearPicker({
             year={item}
             selected={selectedYear === item}
             onPressYear={onPressYear}
+            primaryColor={primaryColor}
           />
         )}
         keyExtractor={(item) => `${item}`}
@@ -76,10 +77,12 @@ function YearPure({
   year,
   selected,
   onPressYear,
+  primaryColor,
 }: {
   year: number
   selected: boolean
   onPressYear: (newYear: number) => any
+  primaryColor: string
 }) {
   const theme = useTheme()
 
