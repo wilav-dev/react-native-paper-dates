@@ -59,8 +59,8 @@ function DatePickerInput(
         inputMode,
         validRange,
         allowEditing,
+        buttonsColor,
         saveLabel,
-        saveLabelColor,
         saveLabelDisabled,
         saveLabelStyle,
         uppercase,
@@ -82,8 +82,8 @@ function DatePickerInput(
             dateMode={inputMode}
             validRange={validRange}
             allowEditing={allowEditing}
+            buttonsColor={buttonsColor}
             saveLabel={saveLabel}
-            saveLabelColor={saveLabelColor}
             saveLabelDisabled={saveLabelDisabled ?? false}
             saveLabelStyle={saveLabelStyle}
             uppercase={uppercase}
